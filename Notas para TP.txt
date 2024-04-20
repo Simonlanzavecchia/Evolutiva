@@ -1,0 +1,24 @@
+1) Problema de permutaciones: vector de enteros no repetidos. No import la adyasencia, solo el orden absoluto.
+Evaluacion (fitness): minimizacion del costo de realizacion de tareas.
+Cruzamiento para permutaciones de orden absoluto: Cruce basado en ciclos para mantener orden absoluto.
+Mutacion para permutaciones de orden absoluto: Intercambio (ya que cambia orden relativo un poco, sin importar ni orden ni adyacencia)
+Seleccion de padres: Teniendo en cuenta que la funcion tendra muchos optimos locales, por lo cual buscamos diversidad, podriamos usar una seleccion por torneo con una muestra no muy grande y varias generaciones dependiendo del tamano de N. Seria en funcion al fitness, ya que no me preocupa perder generaciones pasadas, pero quizas sin permitir duplicados si N es grande.
+Seleccion de sobrevivientes: 
+
+2) No entiendo. No es un caso de ordenamiento simple?
+
+3) No entiendo si se puede elegir la computadora o solo el orden.
+Pero vector de enteros, permutacion, orden relativo,
+
+4) Camino del viajante pero sin volver al inicio. Quizas no tenga restriccion de revisitar.
+Problema de permutaciones o bien vector de enteros con repetidos si hay revisita.
+Evaluación: Camino más corto.
+Cruzamiento: Requiere mas que nada adyasencia.
+
+https://docs.google.com/document/d/1qS5w3S3zKwpxG7vyb1utlIlaN8cGFNLnwRSbNjNbuqs/edit
+
+---------------------------------------------
+1. Apertura, guardado, etc. funciona bien
+2. Genercion de primera poblacion aleatoria funciona bien.
+3. Fitness de poblacion inicial correctamente heterogenea
+ !! Tener muy en cuenta tamano de torneo de seleccion
