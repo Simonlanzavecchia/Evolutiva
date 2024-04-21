@@ -111,7 +111,7 @@ public class algoritmo {
                 // Tengo el fitness de la generacion debido al seguimiento realizado, entonces lo uso para no generar mas computo
                 // pero si no lo tuviese, solo calcularia el fitness de las soluciones en el torneo
                 padres = seleccionPadresTorneo.seleccionPadresTorneoe(poblacionActual, fitnessActual);
-                System.out.println("generacion resultante de torneo: ");
+                /*System.out.println("generacion resultante de torneo: ");
                 for(int i = 0; i < padres.length; i++){
                     System.out.print("Solucion "+i+": ");
                     for(int j = 0; j < padres[0].length; j++){
@@ -119,7 +119,7 @@ public class algoritmo {
                     }
                     System.out.print("Fitness: "+fitness.fitnessSolucion(padres[i], matrizDistancias));
                     System.out.print("\n");
-                }
+                }*/
             }
             // metodoSeleccionPadres == 1: rueda de ruleta
             else if (metodoSeleccionPadres == 1){

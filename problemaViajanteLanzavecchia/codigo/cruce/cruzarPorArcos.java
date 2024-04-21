@@ -17,7 +17,7 @@ public class cruzarPorArcos {
             boolean[] elementosUsados = new boolean[dimension];
             Arrays.fill(elementosUsados, false);
 
-            // Verificar si se realiza el cruce según la probabilidad dada
+            // Verificar si se realiza el cruce según la probabilidad de cruce dada
             double randomNumber = random.nextDouble() * 100;
             if (randomNumber < probabilidadCruce) {
                 // Construir la tabla de arcos
@@ -91,6 +91,10 @@ public class cruzarPorArcos {
                             }
                         }
                     }
+
+                    if (i == 0){
+                        System.out.print(" "+siguienteElemento);
+                    }
                 }
                 // Tratar el último elemento del hijo fuera del bucle
                 /*int[] arcosUltimoElemento = tablaArcos[hijo[dimension - 1]];
@@ -102,6 +106,20 @@ public class cruzarPorArcos {
                     }
                 }
                 hijo[dimension - 1] = siguienteElementoUltimo;*/
+
+                if (i == 0){
+                    System.out.print("Arcos padre "+i+": ");
+                for(int j = 0; j < dimension; j++){
+                    System.out.print(padres[i][j]+" ");
+                }
+                System.out.println();
+
+                System.out.print("Arcos hijo "+i+": ");
+                for(int j = 0; j < dimension; j++){
+                    System.out.print(hijo[j]+" ");
+                }
+                System.out.println();
+                }
 
                 
                 // Asignar el hijo generado a la matriz de hijos

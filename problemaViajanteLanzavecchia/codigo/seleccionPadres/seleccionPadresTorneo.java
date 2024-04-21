@@ -24,7 +24,6 @@ public class seleccionPadresTorneo {
             // Encontrar el individuo con el mejor fitness en el torneo
             int indiceMejor = encontrarMejorIndividuo(torneo, fitnessTorneo);
             padres[i] = torneo[indiceMejor].clone();
-            System.out.println("Fitness padre: "+fitnessTorneo[indiceMejor]);
         }
 
         return padres;
