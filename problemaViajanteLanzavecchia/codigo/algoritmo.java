@@ -22,7 +22,7 @@ public class algoritmo {
         // Inicializo parametros a guardar
         String registro = "";
         int cantidadGeneraciones = configuracion[8];
-        System.out.println("Cantidad de generaciones: " + cantidadGeneraciones);
+        // System.out.println("Cantidad de generaciones: " + cantidadGeneraciones);
         int[] fitnessPorGeneracion = new int[cantidadGeneraciones];
         Instant tiempoInicial = Instant.now();
 
@@ -67,7 +67,6 @@ public class algoritmo {
 
         /// Inicializar poblacion segun parametro de metodo y tamano
         int tamanoPoblacionInicial = configuracion[1];
-        System.out.println("tamanoPoblacionInicial: " + tamanoPoblacionInicial);
         int dimension = matrizDistancias[0].length;
         int[] solucion = new int[dimension];
         int[][] poblacionInicial = new int[tamanoPoblacionInicial][dimension];
@@ -95,7 +94,6 @@ public class algoritmo {
         /// Iteraciones
 
         // Inicializar la poblacion y fitness para la primera iteracion con la inicial
-        // TODO verificar si puedo usar referencia o si quiero guardar la inicial y deberia realizar copia
         int[][] poblacionActual = poblacionInicial;
         int[] fitnessActual = fitnessInicial;
 
